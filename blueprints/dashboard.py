@@ -90,3 +90,15 @@ def dashboard_ic():
         "templates_ic/dashboard.html",
         zh=zh_json["Dashboard"]
     )
+
+# test 
+# @bp.route("/test", methods=["GET", "POST"])
+# @login_required
+# def dashboard_test():
+#     # username = session["user"]
+#     with open("language/text-zh.json", "r", encoding="utf-8") as f:
+#         zh_json = json.load(f)
+#     return render_template(
+#         "templates_test/dashboard.html",
+#         zh=zh_json["Dashboard"]
+#     )

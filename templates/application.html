@@ -52,6 +52,18 @@
           <input class="btn" type="button" value="查看更多" onclick='ic()'/>
         </div>
       </div>
+
+      <!-- test -->
+      <!--
+      <div class="card_combine">
+        <div class="content_combine">
+          <h2>test</h2>
+          <p></p>
+          <input class="btn" type="button" value="查看更多" onclick='test()'/>
+        </div>
+      </div>
+      -->
+
     </div>
   </div>
 </div>
@@ -76,6 +88,16 @@
   function ic() {
     window.location.href = "{{url_for('dashboard.dashboard_ic')}}";
   }
+
 </script>
+
+<!--
+如需添加新模块，在上面<script>块中添加函数
+
+function test() {
+    window.location.href = "{{url_for('dashboard.dashboard_test')}}";
+  }
+    
+-->
 
 {% endblock %} {% block scripts %} {{ super() }} {% endblock %}

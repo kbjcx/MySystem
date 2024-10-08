@@ -15,7 +15,9 @@ from mmengine.dist import master_only
 from mmengine.structures import InstanceData, PixelData
 from mmengine.visualization import Visualizer
 from mmdet.registry import VISUALIZERS
-from utils.detection.visual import DetLocalVisualizerRT
+import sys
+sys.path.append("utils")
+from detection.visual import DetLocalVisualizerRT
 
 
 def get_streamlit_params():

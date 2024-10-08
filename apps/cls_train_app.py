@@ -17,8 +17,10 @@ import random
 import collections
 from PIL import Image
 from traitlets import default
-from utils.dataset_split import DatasetSplit
-from utils.train_util import Trainer
+import sys
+sys.path.append("utils")
+from dataset_split import DatasetSplit
+from train_util import Trainer
 
 
 def get_streamlit_params():
