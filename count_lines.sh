@@ -1,0 +1,1 @@
+find . -name '*.ini' -o -name '*.py' -o -name '*.txt' -o -name '*.css' -o -name '*.js' -o -name '*.html' -o -name '*.sh' | xargs cat > project.docx
